@@ -1,0 +1,93 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	background-color:#222222; 
+	width: 1329px;
+	height:655px;
+	margin:0 auto;
+	color:white;
+	font-size:13px;
+	font-family:"微软雅黑","Terminal","Times New Roman",Georgia,Serif;
+}
+div{
+	margin:0;
+	padding:0;
+}
+#header{
+	height: 51px;
+	line-height: 51px;
+	width:100%;
+}
+#headerT{
+	font-size:16px;
+	font-weight: bold;
+	display: inline-block;
+	height: 100%;
+	width:21%;
+	text-align: center;
+}
+#sysTime{
+	border-radius: 2px;
+	background-color: #1E8DBF;
+	font-size:12px;
+	padding:2px 8px;
+}
+#infoN{
+	border-radius: 2px;
+	background-color: white;
+	font-size:12px;
+	padding:2px 8px;
+	margin-left: 10px;
+}
+#BBox{
+	width:100%;
+	border:solid 1px orange;
+	height: 570px;
+}
+aside{
+	width:21%;
+	height:570px ;
+	float: left;
+}
+section{
+	width: 79%;
+	height: 570px;
+	float: left;
+}
+footer{
+	border:solid 1px yellow;
+	height: 32px;
+	width:100%;
+}
+#BBoxT{
+	height: 40px;
+	line-height: 40px;
+	width:100%;
+	background-color: #F5F5F5;
+	text-align: center;
+}
+#BBoxT img{
+	cursor: pointer;
+	vertical-align: middle;
+	margin-top:-5px;
+	margin-right: 16px;
+	margin-left:2px;
+}
+#navMenu{
+	height:30px;
+	line-height: 30px;
+	width: 100%;
+	background-color: #1E8DBF;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	position: relative;
+}
+#navMenu img{
+	position: absolute;
+	top:7px;
+	right: 0px;
+	cursor: pointer;
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*tab栏*/
+body{
+	margin:0 auto;
+	padding:0;
+	width: 1051px;
+	font-family:"微软雅黑","Terminal","Times New Roman",Georgia,Serif;
+	font-size:13px;
+	background-color: white;
+}
+.clearbox{clear:both}
+.admin_info{width:100%;}
+.admin_tab{width:100%;background:#f5f5f5;height:40px;line-height: 40px;}
+.mywork_tab {float:left;width:100px;height:40px;background:#f5f5f5;text-align:center;}
+.member_tab {float:left;width:100px;height:40px;background:white;text-align:center;}
+.mywork_tab a,.member_tab a{text-decoration:none;color:black;line-height:40px;}
+.member_tab a{color:red}
+/*面包屑导航*/
+.breadNav{width:100%;background:#1e8dbf;height:30px;line-height:30px;color:white;}
+#navM{height:30px;line-height: 30px;width:80%;margin-left:10px;}
+#navM a{color:white;line-height:30px;text-decoration:none;margin:0px 6px;}
+#navM a:hover{color:#CF0301;}
+/*内容*/
+.admin_container{margin:10px;}
+#btn_add,#btn_update,#btn_detele{
+	width:56px;height:28px;background:#1485b6;color:white;border-radius:2px;border:none;
+	cursor: pointer;
+}
+#btn_add:hover{
+	background-color: blue;
+}
+.admin_container table{border:1px solid #ddddde;}
+
+.admin_container table{border-collapse:collapse;}
+.admin_container table{margin-top:10px;}
+.admin_container td{border:1px solid #ddddde;width:135px;height:42px;font-family:"微软雅黑";color:#333333;}
+.admin_container table tbody td{font-size:12px}
+.admin_container table tr:nth-child(odd){background:#F4F4F4}
+.admin_container table tr:hover{background:#eaf6f0}
+#trHead td {text-align:center;font-size:14px;}
+/*.admin_container #trHead td{font-size:20px;text-align:center;border:1px solid red;}*/
