@@ -52,10 +52,10 @@ window.onload=function(){
 		var inframe=document.getElementById("secInframe").contentWindow;
 		var inFrameNavM=inframe.document.getElementById("navM");
 		if(this.src.indexOf("007")>0){
-			this.src="/img/008.png";
+			this.src="img/008.png";
 			inFrameNavM.style.display="none";
 		}else if(this.src.indexOf("008")>0){
-			this.src="/img/007.png";
+			this.src="img/007.png";
 			inFrameNavM.style.display="block";
 		}
 	};
@@ -66,10 +66,10 @@ window.onload=function(){
 	for(var i=0;i<tps.length;i++){
 		(function(i){
 			tps[i].onclick=function(){
-				if(rightImgs[i].src=="img/down.png"){
-					rightImgs[i].src=="img/up.png"
-				}else if(rightImgs[i].src=="img/up.png"){
-					rightImgs[i].src=="img/down.png"
+				if(rightImgs[i].src.indexOf("down")>0){
+					rightImgs[i].src="img/up.png"
+				}else if(rightImgs[i].src.indexOf("up")>0){
+					rightImgs[i].src="img/down.png"
 				}
 			var pds=$(pullDownMenus[i]).find(".pd");
 			if(getComputedStyle(pds[0],null).height=="0px"){
