@@ -28,7 +28,7 @@ window.onload=function(){
 					dayN="日";
 					break;
 			}
-			sysTime.innerHTML='<img src="easyCMadd_addMember_modifyMember/img/clock.png">'+"系统日期："+time.toLocaleDateString()+" 星期"+dayN;
+			sysTime.innerHTML='<img src="img/clock.png">'+"系统日期："+time.toLocaleDateString()+" 星期"+dayN;
 		}, 1000);
 	
 
@@ -36,31 +36,61 @@ window.onload=function(){
 	var navMenuImg=document.getElementById("navMenuImg");
 	navMenuImg.onmouseover=function(){
 		if(this.src.indexOf("006")>0){
-			this.src="easyCMadd_addMember_modifyMember/img/007.png";
+			this.src="img/007.png";
 		}else if(this.src.indexOf("009")>0){
-			this.src="easyCMadd_addMember_modifyMember/img/008.png";
+			this.src="img/008.png";
 		}
 	}
 	navMenuImg.onmouseout=function(){
 		if(this.src.indexOf("007")>0){
-			this.src="easyCMadd_addMember_modifyMember/img/006.png";
+			this.src="img/006.png";
 		}else if(this.src.indexOf("008")>0){
-			this.src="easyCMadd_addMember_modifyMember/img/009.png";
+			this.src="img/009.png";
 		}
 	}
 	navMenuImg.onclick=function(){
 		var inframe=document.getElementById("secInframe").contentWindow;
 		var inFrameNavM=inframe.document.getElementById("navM");
 		if(this.src.indexOf("007")>0){
-			this.src="easyCMadd_addMember_modifyMember/img/008.png";
+			this.src="/img/008.png";
 			inFrameNavM.style.display="none";
 		}else if(this.src.indexOf("008")>0){
-			this.src="easyCMadd_addMember_modifyMember/img/007.png";
+			this.src="/img/007.png";
 			inFrameNavM.style.display="block";
 		}
 	};
-
-
+	// 下拉菜单
+	var tps=document.getElementsByClassName("tp");
+	var pullDownMenus=document.getElementsByClassName("pullDownMenu");
+	var rightImgs=document.getElementsByClassName("rightImg");
+	for(var i=0;i<tps.length;i++){
+		(function(i){
+			tps[i].onclick=function(){
+				if(rightImgs[i].src=="img/down.png"){
+					rightImgs[i].src=="img/up.png"
+				}else if(rightImgs[i].src=="img/up.png"){
+					rightImgs[i].src=="img/down.png"
+				}
+			var pds=$(pullDownMenus[i]).find(".pd");
+			if(getComputedStyle(pds[0],null).height=="0px"){
+				for(var ii=0;ii<pds.length;ii++){
+					pds[ii].style.height="28px";
+					pds[ii].style.borderTop="1px solid white";
+					pds[ii].style.borderBottom="1px solid #E3E4E3";
+					pds[ii].style.opacity=1;
+				}
+				
+			}else if(getComputedStyle(pds[0],null).height!="0px"){
+				for(var ii=0;ii<pds.length;ii++){
+					pds[ii].style.borderTop="";
+					pds[ii].style.borderBottom="";
+					pds[ii].style.height="0px";
+					pds[ii].style.opacity=0;
+				}
+			}
+		}
+		})(i);
+	}
 
 
 

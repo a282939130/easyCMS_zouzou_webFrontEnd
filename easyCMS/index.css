@@ -1,4 +1,7 @@
 @charset "utf-8";
+*{
+	transition: all 1s;
+}
 body{
 	margin:0;
 	padding:0;
@@ -47,12 +50,13 @@ div{
 }
 aside{
 	width:21%;
-	height:570px ;
+	height: 100%;
 	float: left;
+	background-color:#E5E9ED;
 }
 section{
 	width: 79%;
-	height: 570px;
+	height: 100%;
 	float: left;
 }
 footer{
@@ -90,4 +94,52 @@ footer{
 	top:7px;
 	right: 0px;
 	cursor: pointer;
+}
+/*用户管理菜单*/
+#menuBox{
+	background-color:#E5E9ED;
+	width:100%;
+}
+.UserManagementMenu{
+	width:100%;
+	color:#666666;
+	position: relative;
+	font-size: 1.02rem;
+	cursor: pointer;
+}
+.leftImg{
+	vertical-align: -1px;
+	margin-left: 8px;
+}
+.rightImg{
+	position: absolute;
+	top:16px;
+	right: 8px;
+}
+.pullDownMenu{
+	width: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background-color: #E5E9ED;
+	overflow: hidden;
+	position: relative;
+	z-index: 999;
+}
+.pd{
+	height:0px;
+	line-height: 28px;
+	width: 100%;
+	background-color: #E5E9ED;
+	opacity: 0;
+}
+.pdleftImg{
+	vertical-align: -1px;
+	margin-left: 20px;
+}
+.tp{
+	border-bottom:solid 1px #D3DBE4;
+	height:38px;
+	line-height: 38px;
+	background-color:  #E5E9ED;
 }
