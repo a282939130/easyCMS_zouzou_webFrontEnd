@@ -45,7 +45,6 @@ div{
 }
 #BBox{
 	width:100%;
-	border:solid 1px orange;
 	height: 570px;
 	overflow: hidden;
 }
@@ -61,7 +60,6 @@ section{
 	float: left;
 }
 footer{
-	border:solid 1px yellow;
 	height: 32px;
 	width:100%;
 }
