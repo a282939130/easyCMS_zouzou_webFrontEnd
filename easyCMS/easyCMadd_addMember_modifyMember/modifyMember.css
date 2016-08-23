@@ -80,6 +80,9 @@ a{
 	float:left;
 	margin:0 10px;
 	height: 100%;
+	position: relative;
+}
+.userVA{
 	overflow: hidden;
 }
 .listsBox{
@@ -90,6 +93,7 @@ a{
 .areaInput{
 	height: 106px;
 	line-height: 106px;
+	overflow: hidden;
 }
 .areaInput .lists{
 	height: 100%;
@@ -152,4 +156,18 @@ a{
 }
 .MM{
 	cursor: pointer;
+}
+.xxBox{
+	color:blue;
+	width: 185px;
+	height: 18px;
+	line-height:18px;
+	position: absolute;
+	left:190px;
+	top:5px;
+	z-index: 222;
+	vertical-align: middle;
+}
+#passBox{
+	border:solid red 1px;
 }

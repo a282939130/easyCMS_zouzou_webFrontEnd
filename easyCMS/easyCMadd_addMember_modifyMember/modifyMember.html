@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="zouzou">
 	<link rel="stylesheet" type="text/css" href="modifyMember.css">
+	<script type="text/javascript" src="../../../formValidate.js"></script>
 	<title>添加</title>
 </head>
 <body>
@@ -41,7 +42,8 @@
 			<div class="lists">
 				<div class="userKey">电子邮箱:</div>
 				<div class="userValue">
-					<input type="text" class="userValueInput"></input>
+					<input type="email" class="userValueInput" id="emailInput"></input>
+					<div id="emailBox" class="xxBox"></div>
 				</div>
 			</div>
 		</div>
@@ -51,15 +53,16 @@
 			<div class="lists">
 				<div class="userKey">密码:</div>
 				<div class="userValue">
-					<input type="text" class="userValueInput"></input>
+					<input type="password" class="userValueInput" id="pass1"></input>
 					<span>*</span>
 				</div>
 			</div>
 
 			<div class="lists">
-				<div class="userKey">默认密码:</div>
+				<div class="userKey">确认密码:</div>
 				<div class="userValue">
-					<input type="text" class="userValueInput"></input>
+					<input type="password" class="userValueInput" id="pass2"></input>
+					<div id="passBox" class="xxBox">aaaa</div>
 				</div>
 			</div>
 		</div>
@@ -143,7 +146,7 @@
 		<div class="listsBox areaInput">
 			<div class="lists">
 				<div class="userKey memInfo">个人介绍:</div>
-				<div class="userValue">
+				<div class="userValue userVA">
 					<textarea rows="5" cols="43"></textarea>
 				</div>
 			</div>
