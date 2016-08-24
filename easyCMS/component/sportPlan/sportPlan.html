@@ -1,98 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <title>会员管理</title>
-    <link rel="stylesheet" href="css/memberM.css" type="text/css">
-
-    <script src="../../../formValidate.js"></script>
-    <script src="js/jquery-2.2.3.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="author" content="zouzou">
+	<link rel="stylesheet" type="text/css" href="sportPlan.css">
+	<title>sportPlan</title>
 </head>
 <body>
-    <div class="admin_info">
-        <!--tab栏-->
-        <div class="admin_tab">
-            <div class="mywork_tab"><a href="#">我的工作台</a></div>
-            <div class="member_tab"><a href="#"><b>会员管理</b></a></div>
-            <div class="clearbox"></div>
-        </div>
-        <!--面包屑导航-->
-        <div class="breadNav">
-            <div id="navM">
-                <!-- &nbsp;<a href="#">用户管理</a><span>&nbsp;&gt;&gt;</span>
-                会员管理 -->
-                <span class="MM">用户管理</span><span>&nbsp;&gt;&gt;</span>
-                会员管理
-            </div>
-            
-        </div>
-        <!--内容-->
-        <div class="admin_container">
-            <input type="button" id="btn_add" value="添加" />
-            <br />
-            <table>
+	<div id="titleB"><div id="titleBS">计划管理</div></div>
 
-                    <tr id="trHead">
-                        <td style="width:42px;height:42px"><input type="checkbox" id="check_all" onclick="check_box(this.checked)"></td>
-                        <td><b>id</b></td>
-                        <td><b>用户名</b></td>
-                        <td><b>电子邮箱</b></td>
-                        <td><b>会员组</b></td>
-                        <td><b>最后登录</b></td>
-                        <td><b>登录</b></td>
-                        <td><b>禁用</b></td>
-                        <td><b>操作选项</b></td>
-                    </tr>
+	<div id="navMBB">
+		<div id="navM">
+			<div class="navMm navMm1">计划管理</div>
+			<div class="navMm">&gt;&gt;</div>
+			<div class="navMm">运动管理</div>
+		</div>
+	</div>
+	
+	<div id="sectionTriger">
+		<div class="trigers">一般跑步训练计划</div>
+		<div class="trigers" id="trigersCommonH">一般心率训练计划
+			<div class="trigersPull" id="trigersCommonHM">
+				<div class="trigersPM">查看计划</div>
+				<div class="trigersPM">新建计划</div>
+			</div>
+		</div>
+		<div class="trigers">针对性跑步训练计划</div>
+		<div class="trigers">针对性心率训练计划</div>
+	</div>
+	<iframe src="" id="sportPlanIframe">
+		
+
+	</iframe>
 
 
-                    <tr>
-                        <td style="width:42px;height:42px;text-align:center;"><input type="checkbox" /></td>
-                        <td>1</td>
-                        <td>admin1</td>
-                        <td>admin@163.com</td>
-                        <td>产品部</td>
-                        <td>2016-8-15</td>
-                        <td>111</td>
-                        <td>禁用</td>
-                        <td>
-                            <input type="button" id="btn_update" value="修改">
-                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this)">
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td style="width:42px;height:42px;text-align:center;"><input type="checkbox" /></td>
-                        <td>1</td>
-                        <td>admin1</td>
-                        <td>admin@163.com</td>
-                        <td>产品部</td>
-                        <td>2016-8-15</td>
-                        <td>111</td>
-                        <td>禁用</td>
-                        <td>
-                            <input type="button" id="btn_update" value="修改">
-                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this)">
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td style="width:42px;height:42px;text-align:center;"><input type="checkbox" /></td>
-                        <td>1</td>
-                        <td>admin1</td>
-                        <td>admin@163.com</td>
-                        <td>产品部</td>
-                        <td>2016-8-15</td>
-                        <td>111</td>
-                        <td>禁用</td>
-                        <td>
-                            <input type="button" id="btn_update" value="修改">
-                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this)">
-                        </td>
-                    </tr>
-
-            </table>
-        </div>
-    </div>
-    <script type="text/javascript" src="js/memberM.js"></script>
+	<script type="text/javascript" src="sportPlan.js"></script>
 </body>
 </html>

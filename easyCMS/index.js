@@ -48,8 +48,11 @@ window.onload=function(){
 			this.src="img/009.png";
 		}
 	}
+	/////////////////
+	var inframe=document.getElementById("secInframe").contentWindow;
+	var inframeI=document.getElementById("secInframe")
 	navMenuImg.onclick=function(){
-		var inframe=document.getElementById("secInframe").contentWindow;
+		
 		var inFrameNavM=inframe.document.getElementById("navM");
 		if(this.src.indexOf("007")>0){
 			this.src="img/008.png";
@@ -91,7 +94,11 @@ window.onload=function(){
 		}
 		})(i);
 	}
+	var spotN=document.getElementById("spotN");
+	spotN.onclick=function(){
+		inframeI.src="component/sportPlan/sportPlan.html";
 
+	}
 
 
 };
