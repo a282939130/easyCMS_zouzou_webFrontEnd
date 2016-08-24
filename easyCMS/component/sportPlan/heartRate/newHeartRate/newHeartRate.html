@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="zouzou">
+	<link rel="stylesheet" type="text/css" href="newHeartRate.css">
+	<title>New heartRatePlan</title>
+</head>
+<body>
+	<h3>制定心率训练计划</h3>
+	<form action="#" method="post" id="heartRateForm" name="heartRateForm">
+		<div id="stageNameBox">
+			<label>
+				计划名称:
+				<input name="stageName" id="stageName"></input>
+			</label>
+		</div>
+		<div class="stageBox" id="stageBox">
+			<div id="stageRow">
+				<label>
+					Start
+					<input name="heartDurationStartTime" class="input1"></input>
+				</label>
+				<label>
+					End
+					<input name="heartDurationEndTime" class="input1"></input>
+				</label>
+				<label>
+					Range
+					<input name="heartRateRange" class="input2 input1"></input>
+				</label>
+			</div>
+			
+
+
+
+		</div>
+
+		<button type="button" class="bbb" id="addStage">add</button>
+		<button type="submit" class="bbb">save</button>
+
+	</form>
+
+
+
+
+
+
+	<script type="text/javascript" src="newHeartRate.js"></script>
+</body>
+</html>
