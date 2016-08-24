@@ -15,12 +15,6 @@ window.onload=function(){
 		})(i);
 	}
 	
-	// trigersCommonH.onmouseover=function(){
-	// 	trigersCommonHM.style.display="block"
-	// }
-	// trigersCommonH.onmouseleave=function(){
-	// 	trigersCommonHM.style.display="none"
-	// }
 
 	var newHeartP=document.getElementById("newHeartP");
 	var sportPlanIframe=document.getElementById("sportPlanIframe");

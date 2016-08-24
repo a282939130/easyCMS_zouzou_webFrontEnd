@@ -12,4 +12,10 @@ window.onload=function(){
 		stageBox.appendChild(newRow);
 
 	}
+
+	// var sb=document.getElementById("sb");
+	// sb.onclick=function(){
+	// 	var values=$("form").serialize();
+	// 	alert(values);
+	// }
 }
