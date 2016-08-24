@@ -7,6 +7,8 @@
 
     <script src="../../../formValidate.js"></script>
     <script src="js/jquery-2.2.3.min.js"></script>
+
+    <script type="text/javascript" src="js/memberM.js"></script>
 </head>
 <body>
     <div class="admin_info">
@@ -56,7 +58,7 @@
                         <td>禁用</td>
                         <td>
                             <input type="button" id="btn_update" value="修改">
-                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this)">
+                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this.parentNode.parentNode)">
                         </td>
                     </tr>
 
@@ -71,7 +73,7 @@
                         <td>禁用</td>
                         <td>
                             <input type="button" id="btn_update" value="修改">
-                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this)">
+                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this.parentNode.parentNode)">
                         </td>
                     </tr>
 
@@ -86,13 +88,12 @@
                         <td>禁用</td>
                         <td>
                             <input type="button" id="btn_update" value="修改">
-                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this)">
+                            <input type="button" id="btn_detele" value="删除" onclick="btn_del(this.parentNode.parentNode)">
                         </td>
                     </tr>
 
             </table>
         </div>
     </div>
-    <script type="text/javascript" src="js/memberM.js"></script>
 </body>
 </html>

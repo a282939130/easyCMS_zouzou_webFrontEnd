@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{
-	transition: all 1s;
+	transition: all 0.5s;
 }
 body{
 	margin:0;
