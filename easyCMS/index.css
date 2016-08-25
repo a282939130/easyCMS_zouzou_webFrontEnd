@@ -109,7 +109,7 @@ footer{
 }
 .leftImg{
 	vertical-align: -1px;
-	margin-left: 8px;
+	margin-left: 20px;
 }
 .rightImg{
 	position: absolute;
@@ -130,12 +130,12 @@ footer{
 	height:0px;
 	line-height: 28px;
 	width: 100%;
-	background-color: #E5E9ED;
+	background-color: #D8DDE3;
 	opacity: 0;
 }
 .pdleftImg{
 	vertical-align: -1px;
-	margin-left: 20px;
+	margin-left: 60px;
 }
 .tp{
 	border-bottom:solid 1px #D3DBE4;

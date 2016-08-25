@@ -75,6 +75,21 @@ window.onload=function(){
 					rightImgs[i].src="img/down.png"
 				}
 			var pds=$(pullDownMenus[i]).find(".pd");
+			var pdss=document.getElementsByClassName("pd");
+			// 二级菜单变色
+			for(var j=0;j<pds.length;j++){
+				(function(j){
+					pds[j].onmousedown=function(){
+						for(var jj=0;jj<pdss.length;jj++){
+							pdss[jj].style.backgroundColor="#D8DDE3";
+						}
+						pds[j].style.backgroundColor="#F5F5F5";
+					};
+				})(j);
+			}
+
+
+
 			if(getComputedStyle(pds[0],null).height=="0px"){
 				for(var ii=0;ii<pds.length;ii++){
 					pds[ii].style.height="28px";
