@@ -83,9 +83,23 @@ window.onload=function(){
 
 
 	var sb=document.getElementById("sb");
+	var jsonText='{';
 	sb.onclick=function(){
 		var values=$("form").serialize();
-		alert(values);
+		var valueArray=values.split("&");
+		for(var i=0;i<valueArray.length;i++){
+			var ar=valueArray[i].split("=");
+			jsonText=jsonText+'"'+ar[0]+'":"'+ar[1]+'",';
+		}
+		jsonText=jsonText+'"":""}'
+
+
+
+
+		var blob = new Blob([jsonText], {type: "text/plain;charset=utf-8"});
+		saveAs(blob, "saveHeartRate.json");
+
+
 	}
 
 
