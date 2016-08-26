@@ -31,21 +31,83 @@
 					Range
 					<input name="heartRateRange" class="input3 pps"></input>
 				</label>
+				<button type="button" class="fB fBD" onclick="dFB(this.parentNode);cBC(this,'white');">Del</button>
+				<button type="button" class="fB fBS" onclick="showNode();cBC(this,'white');dRR('heartCanvas','stageRow','.pps','red');" onmouseout="cBC(this,'#1E8DBF')">Sav</button>
 			</div>
 			
 
 
 
 		</div>
-
 		<button type="button" class="bbb" id="addStage">add</button>
-		<button type="submit" class="bbb" id="sb">save</button>
+		<button type="submit" class="bbb" id="sb">submit</button>
 
 	</form>
 
-	<!-- <canvas id="myCanvas" height="30px" width="500px"></canvas> -->
-	<div id="stageStripO"></div>
-	<div id="stageStrip"></div>
+		<div id="stageStrip">
+			<canvas id="heartCanvas" width="1000px" height="290px"></canvas>
+			<div id="timeX" class="x0">Time
+				<div id="bbb"><div class="bbbo">=20</div></div>
+			</div>
+			<div id="rateY" class="x0">Rate
+				<div id="ddd"><div class="dddo">=20</div></div>
+			</div>
+			<div id="rateDegree">
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+				<div class="dd"></div>
+			</div>
+			<div id="timeDegree">
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+				<div class="bb"></div>
+			</div>
+		</div>
 
 
 

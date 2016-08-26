@@ -10,6 +10,9 @@ body{
 	text-align: center;
 	background-color: #F5F5F5;
 }
+*{
+	transition: all 1s;
+}
 .input1,.input2,.input3{
 	border:none;
 	outline: none;
@@ -23,6 +26,7 @@ body{
 }
 .input3{
 	height:30px;
+	font-size: 17px;
 }
 .stageBox{
 	margin:10px;
@@ -52,14 +56,84 @@ body{
 	background-color:#EBBAB2;
 	margin:15px;
 }
-#stageStripO{
-	height:10px;
-	line-height: 10px;
-	margin:20px;
-	vertical-align: bottom;
-}
 #stageStrip{
+	height:300px;
 	margin:20px;
-	vertical-align: bottom;
+	position: relative;
+	display: none;
+}
+.x0{
+	position: absolute;
+	width: 10px;
+	height: 15px;
+	line-height: 15px;
+}
+#timeX{
+	top:240px;
+	right:130px;
+}
+#rateY{
+	top:20px;
+	left:55px;
+}
+#rateDegree{
+	position: absolute;
+	height: 200px;
+	width: 10px;
+	top:19px;
+	left:93px;
+}
+#timeDegree{
+	position: absolute;
+	height: 10px;
+	width: 820px;
+	top:229px;
+	right:85px;
+}
+.dd,#ddd{
+	height:18px;
+	width: 3px;
+	border:solid 1px green;
+	background-color:silver;
+}
+.bb,#bbb{
+	width:18px;
+	height: 3px;
+	border:solid 1px green;
+	background-color:silver;
+	float:left;
+	vertical-align: middle;
+}
+#ddd,#bbb{
+	position: relative;
+}
+.bbbo{
+	position: absolute;
+	left:20px;
+	top:-8px;
+}
+.dddo{
+	position: absolute;
+	left:5px;
+	top:0px;
+}
+#sb{
+	padding: 10px;
+	margin:10px;
+	height: 70px;
+	width:70px;
+	border-radius: 40px;
+	font-size: 18px;
+}
+.fB{
+	border:none;
+	border-radius: 15px;
+	outline: none;
+	height:30px;
+	width:30px;
+	padding:0;
+	cursor: pointer;
+	background-color: #1E8DBF;
+	color:white;
 }
 

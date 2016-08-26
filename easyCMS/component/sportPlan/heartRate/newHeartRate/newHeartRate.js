@@ -11,117 +11,79 @@ window.onload=function(){
 		newRow.setAttribute("class","stageRow");
 		newRow.innerHTML=stageRowHtml;
 		stageBox.appendChild(newRow);
-// /////////
-		
-			var input1s=document.getElementsByClassName("input1");
-			var input2s=document.getElementsByClassName("input2");
-			var input3s=document.getElementsByClassName("input3");
-			var stageRows=document.getElementsByClassName("stageRow");
-			var input3s=document.getElementsByClassName("input3");
-			var stageNs=stageRows.length;
-			var ns=stageNs-2;
-					var nn="new"+ns;
-					var nn=document.createElement("div");
-					// 进度条长度
-					var stripL,stripC;
-					var l1=input1s[ns].value;
-					var l2=input2s[ns].value;
-					stripL=l2-l1;
-					if(stripL<5){
-						stripL=stripL*2;
-					}else if((stripL>4)&&(stripL<100)){
-						stripL=l2-l1;
-					}else if(stripL>99){
-						stripL=stripL*0.7;
-					}
-					// 进度条色
-					var cc=input3s[ns].value;
-					if(cc<115){
-						stripC="#CCCCCC";
-						input3s[ns].style.backgroundColor="#CCCCCC";
-					}else if(cc>114&&cc<134){
-						stripC="#44CFF6";
-						input3s[ns].style.backgroundColor="#44CFF6";
-					}else if(cc>133&&cc<152){
-						stripC="#2CFCCB";
-						input3s[ns].style.backgroundColor="#2CFCCB";
-					}else if(cc>151&&cc<171){
-						stripC="#FFCA46";
-						input3s[ns].style.backgroundColor="#FFCA46";
-					}else if(cc>170&&cc<190){
-						stripC="#FD6768";
-						input3s[ns].style.backgroundColor="#FD6768";
-					}
-
-					// nn.innerHTML="start:"+l1+"<br/>"+"rate:"+cc+"<br/>"+"end:"+l2;
-					if(stripL<56){
-						var ls=60-stripL;
-						nn.setAttribute("style","height:"+cc/5+"px;line-height:20px;width:"+stripL+"px;background-color:"+stripC+";display:inline-block;vertical-align:bottom;");
-							// margin-right:"+ls+"px;");
-					}else{
-						nn.setAttribute("style","height:"+cc/5+"px;line-height:20px;width:"+stripL+"px;background-color:"+stripC+";display:inline-block;vertical-align:bottom;");
-					}
-					stageStrip.appendChild(nn);
-
-					var nnO=document.createElement("div");
-					nnO.innerHTML="";
-					nnO.setAttribute("style","height:10px;line-height:10px;width:"+stripL+"px;background-color:"+stripC+";display:inline-block;");
-					var stageStripO=document.getElementById("stageStripO");
-					stageStripO.appendChild(nnO);
-
-		
-		
-
-
-
-
-
-
-
-
 	}
 
 
-	var sb=document.getElementById("sb");
-	var jsonText='{';
-	sb.onclick=function(){
-		var values=$("form").serialize();
-		var valueArray=values.split("&");
-		for(var i=0;i<valueArray.length;i++){
-			var ar=valueArray[i].split("=");
-			jsonText=jsonText+'"'+ar[0]+'":"'+ar[1]+'",';
-		}
-		jsonText=jsonText+'"":""}'
 
-
-
-
-		var blob = new Blob([jsonText], {type: "text/plain;charset=utf-8"});
-		saveAs(blob, "saveHeartRate.json");
-
-
-	}
-
-
-//     var jsonstr = '[{"Title":"星期二多云","Content":"是佛时间佛教;"},{"Title":" 第一章","Content":"<strong>多云，微风</strong>"},{"Title":" 第二章","Content":"降落伞"},{"Title":" 第三章","Content":"<em><u></u></em>"}]';
-
-//     var jsonDataString = '{result:true,message:"这是返回的信息"}';
-// 　　
-// 　　//javascript 方式
-//     var jsonData = eval("(" + jsonDataString + ")");
-// 　　//jQuery 方式
-//     var dataset = $.parseJSON(jsonstr);
-
-//     alert(dataset[0].Title);
-
-//     alert(jsonData.message);
-
-
-	// var myCanvas=document.getElementById("myCanvas");
-	// var ctx=myCanvas.getContext('2d');
-	// ctx.moveTo(10,5);
-	// ctx.lineTo(50,5);
-	// ctx.stroke();
 
 
 }
+
+
+
+
+
+
+// /////////////////////////
+// //////////////functions
+// /////////////////////////
+// delete button
+function dFB(obj){
+	obj.parentNode.removeChild(obj);
+}
+// change the background color
+function cBC(obj,bColor){
+	obj.style.backgroundColor=bColor;
+}
+// draw the line for heart rate
+function dHL(cx,start,rate,end,color){
+	start=parseInt(start)+100+'';
+	end=parseInt(end)+100+'';
+	cx.globalAlpha=0.7;
+    cx.beginPath();
+	cx.moveTo(start,220);
+	cx.lineTo(start,(220-rate));
+	cx.lineTo(end,(220-rate));
+	cx.lineTo(end,220);
+	cx.lineTo(start,220);
+	cx.fillStyle=color;
+	cx.fill();
+	cx.closePath();
+	cx.beginPath();
+	cx.moveTo(start,(220-rate));
+	cx.lineTo(end,(220-rate));
+	cx.strokeStyle="red";
+	cx.stroke();
+	cx.closePath(); 
+}
+//draw rate rec	
+function dRR(canvasId,rowsName,inputName){
+	var cv=document.getElementById(canvasId);
+	var cx=cv.getContext('2d');
+	cx.clearRect(0,0,1000,290);
+	var stageRows=document.getElementsByClassName(rowsName);
+		for(var i=0;i<stageRows.length;i++){
+			(function(i){
+				var pps=$(stageRows[i]).find(inputName);
+				var color,rt=pps[2].value;
+				if(rt<115){
+					color="#CCCCCC";
+				}else if(rt>114&&rt<134){
+					color="#3ED2F8";
+				}else if(rt>113&&rt<153){
+					color="#32F9CE";
+				}else if(rt>152&&rt<172){
+					color="#F9CD46";
+				}else if(rt>171&&rt<191){
+					color="#FA6869";
+				}
+				dHL(cx,pps[0].value,rt,pps[1].value,color);
+			})(i);
+		}
+}
+//////显示图表
+function showNode(){
+	var stage=document.getElementById("stageStrip");
+	stage.style.display="block";
+}
+
