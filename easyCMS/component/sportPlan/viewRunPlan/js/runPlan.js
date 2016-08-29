@@ -4,7 +4,7 @@ $(function(){
 		var rows=data.length;
 		for(var i=0;i<rows;i++){
 			var newForm=document.createElement("form");
-			newForm.innerHTML='<div class="runPlanDetail"><div class="runPanTitleDemo" name="runPlanItemName" class="titles">标题1</div><div class="runPlanDaysDemo" name="runPlanDay">5天</div><div class="runPlanDescriptionDetail description" name="runPlanItemName">xxxxxxxxxxxxxxxx</div><div class="runPlanBtns"><input type="button"  class="bbt" id="updataBtn"  value="修改"/><input type="button" id="deleteBtn"  class="bbt"  value="删除" onclick="del(this.parentNode.parentNode)" /></div></div>';
+			newForm.innerHTML='<div class="runPlanDetail"><div class="runPanTitleDemo" name="runPlanItemName" class="titles"></div><div class="runPlanDaysDemo" name="runPlanDay"></div><div class="runPlanDescriptionDetail description" name="runPlanItemName"></div><div class="runPlanBtns"><input type="button"  class="bbt" id="updataBtn"  value="修改"/><input type="button" id="deleteBtn"  class="bbt"  value="删除" onclick="del(this.parentNode.parentNode)" /></div></div>';
 			runPlan.appendChild(newForm);
         }
         var runPanTitleDemos=document.getElementsByClassName("runPanTitleDemo");

@@ -27,7 +27,10 @@ body{width:1050px;font-family:"微软雅黑","Terminal","Times New Roman",Georgi
 	line-height: 60px;
 	overflow: hidden;
 }
-.description{width:58%;}
+.description{width:58%;line-height:20px;text-align:left;}
+.descriptionTitle{
+	width:58%;
+}
 .runPlanTop{
 	height: 30px;
 	line-height: 30px;
