@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="zouzou">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/baseUnit.js"></script>
+	<title>User Login</title>
+</head>
+<body>
+	<div id="userLoginTitle">
+		<b>用户注册</b>
+	</div>
+	<form id="userInfoForm" method="post" action="#">
+		<table id="userInfoTable" border="1px" cellspacing="0" cellpadding="5px">
+			<tr class="userInfoRow">
+				<td class="userInputLabel">userId:</td>
+				<td class="userInputBox">
+					<input type="text" class="userInfoInput" id="userId" name="userId"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">mobile:</td>
+				<td class="userInputBox">
+					<input type="text" class="userInfoInput" id="mobile" name="mobile"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">gender:</td>
+				<td class="userInputBox">
+					<input type="text" name="gender" class="userInfoInput" id="gender"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">password:</td>
+				<td class="userInputBox">
+					<input type="password" name="password" class="userInfoInput" id="password"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">password validate:</td>
+				<td class="userInputBox">
+					<input type="password" name="passwordVa" class="userInfoInput" id="passwordVa"></input>
+					<div id="passVaBox"  class="inputH"></div>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">email:</td>
+				<td class="userInputBox">
+					<input type="email" name="email" class="userInfoInput" id="email"></input>
+					<div id="emailBox" class="inputH"></div>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">birthday:</td>
+				<td class="userInputBox">
+					<input type="text" name="birthday" class="userInfoInput" id="birthday"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">city:</td>
+				<td class="userInputBox">
+					<input type="text" name="city" class="userInfoInput" id="city"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">imageAddr:</td>
+				<td class="userInputBox">
+					<input type="text" name="imageAddr" class="userInfoInput" id="imageAddr"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">nickname:</td>
+				<td class="userInputBox">
+					<input type="text" name="nickname" class="userInfoInput" id="nickname"></input>
+				</td>
+			</tr>
+
+			<tr class="userInfoRow">
+				<td class="userInputLabel">description:</td>
+				<td class="userInputBox">
+					<textarea class="userInfoInput" name="description" id="description" cols="21" rows="5"></textarea>
+				</td>
+			</tr>
+
+
+		</table>
+		
+
+		<button type="submit" id="subB" formmethod="post" formtarget="_blank">提交</button>
+	</form>
+	
+
+
+
+
+
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>
