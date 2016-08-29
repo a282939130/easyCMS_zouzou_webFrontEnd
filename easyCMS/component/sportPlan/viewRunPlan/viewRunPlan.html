@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/runPlan.css">
+    <script src="js/runPlan.js"></script>
+</head>
+<body>
+    <div class="runPlan">
+        <div class="runPlanTop">
+            <div class="runPlanTitle"><b>标题</b></div>
+            <div class="runPlanDays"><b>天数</b></div>
+            <div class="runPlanDescription description"><b>描述</b></div>
+            <div class="runPlanOperation"><b>操作</b></div>
+            <div class="clearbox"></div>
+        </div>
+
+        <form method="post" action="#">
+            <div class="runPlanDetail">
+                <div class="runPanTitleDemo" name="runPlanItemName">标题1</div>
+                <div class="runPlanDaysDemo" name="runPlanDay">5天</div>
+                <div class="runPlanDescriptionDetail description" name="runPlanItemName" style="overflow-y:scroll">这是重新写过的一遍，不想再写了，一次性过吧</div>
+                <div class="runPlanBtns">
+                    <input type="button" id="updataBtn"  value="修改" onclick="updata(this)" />
+                    <input type="button" id="deleteBtn"  value="删除" onclick="del(this.parentNode.parentNode)" />
+                </div>
+                <div class="clearbox"></div>
+            </div>
+        </form>
+
+        <form method="post" action="#">
+            <div class="runPlanDetail">
+                <div class="runPanTitleDemo" name="runPlanItemName">标题2</div>
+                <div class="runPlanDaysDemo" name="runPlanDay">6天</div>
+                <div class="runPlanDescriptionDetail description" name="runPlanItemName" style="overflow-y:scroll">这是重新写过的一遍，不想再写了，一次性过吧</div>
+                <div class="runPlanBtns">
+                    <input type="button" id="updataBtn" name="updataBtn" value="修改" onclick="updata(this)" />
+                    <input type="button" id="deleteBtn" name="deleteBtn" value="删除" onclick="del(this.parentNode.parentNode.parentNode)" />
+                </div>
+                <div class="clearbox"></div>
+            </div>
+        </form>
+
+        <form method="post" action="#">
+            <div class="runPlanDetail">
+                <div class="runPanTitleDemo" name="runPlanItemName">标题3</div>
+                <div class="runPlanDaysDemo" name="runPlanDay">7天</div>
+                <div class="runPlanDescriptionDetail description" name="runPlanItemName" style="overflow-y:scroll">这是重新写过的一遍，不想再写了，一次性过吧</div>
+                <div class="runPlanBtns">
+                    <input type="button" id="updataBtn" name="updataBtn" value="修改" onclick="updata(this)" />
+                    <input type="button" id="deleteBtn" name="deleteBtn" value="删除" onclick="del(this.parentNode.parentNode)" />
+                </div>
+                <div class="clearbox"></div>
+            </div>
+        </form>
+
+        <form method="post" action="#">
+            <div class="runPlanDetail">
+                <div class="runPanTitleDemo" name="runPlanItemName">标题4</div>
+                <div class="runPlanDaysDemo" name="runPlanDay">8天</div>
+                <div class="runPlanDescriptionDetail description" name="runPlanItemName" style="overflow-y:scroll">这是重新写过的一遍，不想再写了，一次性过吧</div>
+                <div class="runPlanBtns">
+                    <input type="button" id="updataBtn" name="updataBtn" value="修改" onclick="updata(this)" />
+                    <input type="button" id="deleteBtn" name="deleteBtn" value="删除" onclick="del(this.parentNode.parentNode)" />
+                </div>
+                <div class="clearbox"></div>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
