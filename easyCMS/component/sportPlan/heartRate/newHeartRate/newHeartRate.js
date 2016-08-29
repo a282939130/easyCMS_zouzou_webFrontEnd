@@ -13,17 +13,31 @@ window.onload=function(){
 		stageBox.appendChild(newRow);
 	}
 
+	var input3s=document.getElementsByClassName("input3");
+	for(var i=0;i<input3s.length;i++){
+		(function(i){
+			input3s[i].onblur=function(){
+				validateNumberInput(input3s[i],95,190);
+			}
+		})(i);
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 }
-
-
-
-
-
-
 // /////////////////////////
 // //////////////functions
 // /////////////////////////

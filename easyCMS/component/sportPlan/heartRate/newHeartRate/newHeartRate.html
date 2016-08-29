@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="zouzou">
 	<link rel="stylesheet" type="text/css" href="newHeartRate.css">
-	<script type="text/javascript" src="FileSave.js"></script>
-	<script type="text/javascript" src="../../../../jQuery v2.0.0.js"></script>
+	<script type="text/javascript" src="../../../../js/baseUnit.js"></script>
+	<script type="text/javascript" src="../../../../js/jquery-2.2.3.min.js"></script>
 	<title>New heartRatePlan</title>
 </head>
 <body>
@@ -21,15 +21,15 @@
 			<div class="stageRow">
 				<label>
 					Start
-					<input name="heartDurationStartTime" class="input1 pps"></input>
+					<input name="heartDurationStartTime" class="input1 pps" type="number" min="1" max="999"></input>
 				</label>
 				<label>
 					End
-					<input name="heartDurationEndTime" class="input2 pps"></input>
+					<input name="heartDurationEndTime" class="input2 pps" type="number" min="1" max="999"></input>
 				</label>
 				<label>
 					Range
-					<input name="heartRateRange" class="input3 pps"></input>
+					<input name="heartRateRange" class="input3 pps" type="number" min="95" max="190"></input>
 				</label>
 				<button type="button" class="fB fBD" onclick="dFB(this.parentNode);cBC(this,'white');">Del</button>
 				<button type="button" class="fB fBS" onclick="showNode();cBC(this,'white');dRR('heartCanvas','stageRow','.pps','red');" onmouseout="cBC(this,'#1E8DBF')">Sav</button>
