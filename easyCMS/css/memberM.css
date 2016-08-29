@@ -14,7 +14,7 @@ body{
 .mywork_tab {float:left;width:100px;height:40px;background:#f5f5f5;text-align:center;}
 .member_tab {float:left;width:100px;height:40px;background:white;text-align:center;}
 .mywork_tab a,.member_tab a{text-decoration:none;color:black;line-height:40px;}
-.member_tab a{color:red}
+.member_tab a{color:#CF0301}
 /*面包屑导航*/
 .breadNav{width:100%;background:#1e8dbf;height:30px;line-height:30px;color:white;}
 #navM{height:30px;line-height: 30px;width:80%;margin-left:10px;}
