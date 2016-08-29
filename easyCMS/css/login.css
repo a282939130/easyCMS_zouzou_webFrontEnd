@@ -1,0 +1,30 @@
+*{margin:0;padding:0;}
+
+/*背景图片*/
+*{font-family:"微软雅黑";}
+.login_box{width:1920px;height:970px;position:absolute;left:50%;margin-left:-960px;background-image:url(../img/login_bgImage.png)}
+/*登陆面板*/
+.login_panel{position:relative;width:500px;height:300px;margin-left:auto;margin-right:auto;margin-top:260px;background:white;border-radius:8px;}
+/*登陆面板顶部*/
+.login_welcome{font-size:24px;color:#21416a;text-align:center;line-height:70px;}
+/*登陆信息*/
+.login_info{width:350px;margin:0 auto;}
+/*用户名*/
+.userLine{color:#019bbd;}
+.lableBox{width:110px;text-align:left;display:inline-block;font-size:16px;}
+.inputBox{width:200px;line-height:24px;}
+#testWordName{width:100px;}
+.passwordTitle,.testTitle{color:#019bbd;}
+#testImage{width:80px;height:24px;border:1px solid red;display:inline-block; vertical-align: middle;}
+/*登陆注册Button*/
+.login_btns{width:350px;margin:30px auto;}
+.loginBtn{width:60px;height:30px;background:#588ed0;border:none;border-radius:2px;color:white;}
+#registBtn,#loginBtn{cursor:pointer;}
+#registBtn{margin-left:90px;}
+#loginBtn{margin-left:50px;}
+.rowsB{
+    height:30px;
+    line-height: 30px;
+    padding:10px;
+}
+
