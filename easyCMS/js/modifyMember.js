@@ -9,7 +9,7 @@ window.onload=function(){
 	var box=document.getElementById("emailBox");
 	var MM_triger=document.getElementsByClassName("MM_triger")[0];
 	MM_triger.onclick=function(){
-		window.open("../memberManagement/userM_memberM_memberM.html","_self");
+		window.open("userM_memberM_memberM.html","_self");
 	};
 
 	var emailInput=document.getElementById("emailInput");
