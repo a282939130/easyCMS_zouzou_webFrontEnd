@@ -1,8 +1,15 @@
 window.onload=function(){
+	var newHeartP=document.getElementById("newHeartP");
+	var sportPlanIframe=document.getElementById("sportPlanIframe");
 	var trigersCommonH=document.getElementById("trigersCommonH");
 	var trigersCommonHM=document.getElementById("trigersCommonHM");
 	var trigers=document.getElementsByClassName("trigers");
 	var trigersPulls=document.getElementsByClassName("trigersPull");
+	var newRunPlan=document.getElementById("newRunPlan");
+	
+	newRunPlan.onclick=function(){
+		sportPlanIframe.src="newRunPlan/runPlanAdd.html";
+	}
 
 	for(var i=0;i<2;i++){
 		(function(i){
@@ -16,8 +23,7 @@ window.onload=function(){
 	}
 	
 
-	var newHeartP=document.getElementById("newHeartP");
-	var sportPlanIframe=document.getElementById("sportPlanIframe");
+	
 	newHeartP.onclick=function(){
 		sportPlanIframe.src="heartRate/newHeartRate/newHeartRate.html";
 	}

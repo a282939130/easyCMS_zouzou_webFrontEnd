@@ -1,9 +1,12 @@
-body{width:1150px;height:572px;font-family:"微软雅黑","Terminal","Times New Roman",Georgia,Serif}
+body{
+	background-color:#F5F5F5;
+	width:1051px;
+	font-family:"微软雅黑","Terminal","Times New Roman",Georgia,Serif}
 .clearbox{clear:both;}
 
 
 /*大框*/
-.runPlanAdd{margin:50px 50px;border:1px solid #ddddde;}
+.runPlanAdd{margin:50px 50px;}
 /*标题*/
 .addTitle{margin-top:30px;margin-left:auto;margin-right:auto;color:#1e8dbf;}
 
