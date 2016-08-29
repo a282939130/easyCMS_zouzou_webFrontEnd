@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 </head>
 <body>
-    <div class="login_box">
+    <div class="login_box" id="mainBox">
 
         <div class="login_panel">
             <div class="login_welcome"><b>欢 迎 登 陆 健 康 传 奇</b></div>
@@ -31,10 +32,11 @@
                 </div>
             </div>
             <div class="login_btns">
-                <a href="#"><input type="button" id="registBtn" class="loginBtn" value="注册"></a>
-                <a href="#"><input type="button" id="loginBtn" class="loginBtn" value="登陆"></a>
+                <a href="register.html" target="_blank">注册</a>
+                <input type="button" id="loginBtn" class="loginBtn" value="登陆">
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
