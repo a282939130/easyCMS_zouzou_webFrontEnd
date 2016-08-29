@@ -1,0 +1,46 @@
+
+body{width:1050px;font-family:"微软雅黑","Terminal","Times New Roman",Georgia,Serif;box-sizing: border-box;margin:auto auto;display: block;}
+
+
+/*大框*/
+#runPlan{margin:20px;}
+/*框子顶部*/
+.runPlanTitle,.runPlanDays,.runPlanDescription,.runPlanOperation{
+	float:left;width:14%;text-align:center;
+	color:white;}
+
+/*框子内容*/
+.runPanTitleDemo,.runPlanDaysDemo,.runPlanDescriptionDetail,.runPlanBtns{
+	float:left;width:14%;text-align:center;
+	font-size:14px;
+}
+.runPlanDescriptionDetail{
+	overflow-y: scroll;
+	height: 100%;
+}
+.runPlanDetail:nth-child(2n){background:#efefef;}
+.runPlanDetail:hover{background:#f4fefc;cursor: default;}
+.runPlanDetail{
+	background-color:silver;
+	margin:1px;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+}
+.description{width:58%;}
+.runPlanTop{
+	height: 30px;
+	line-height: 30px;
+	background-color:#1E8DBF;
+	margin:1px;
+}
+.bbt{
+	border:none;
+	outline: none;
+	border-radius: 4px;
+	margin:2px;
+	cursor: pointer;
+	color:white;
+	background-color:#1E8DBF;
+	height:25px;
+}

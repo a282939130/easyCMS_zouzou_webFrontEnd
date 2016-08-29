@@ -6,9 +6,13 @@ window.onload=function(){
 	var trigers=document.getElementsByClassName("trigers");
 	var trigersPulls=document.getElementsByClassName("trigersPull");
 	var newRunPlan=document.getElementById("newRunPlan");
+	var viewRunPlan=document.getElementById("viewRunPlan");
 	
 	newRunPlan.onclick=function(){
 		sportPlanIframe.src="newRunPlan/runPlanAdd.html";
+	}
+	viewRunPlan.onclick=function(){
+		sportPlanIframe.src="viewRunPlan/viewRunPlan.html";
 	}
 
 	for(var i=0;i<2;i++){
