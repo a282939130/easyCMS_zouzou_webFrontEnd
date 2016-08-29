@@ -136,4 +136,9 @@ body{
 	background-color: #1E8DBF;
 	color:white;
 }
+#heartRangeColorBox{
+	position: fixed;
+	top:20px;
+	left:40px;
+}
 

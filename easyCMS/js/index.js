@@ -28,7 +28,7 @@ window.onload=function(){
 					dayN="日";
 					break;
 			}
-			sysTime.innerHTML='<img src="img/clock.png">'+"系统日期："+time.toLocaleDateString()+" 星期"+dayN;
+			sysTime.innerHTML="系统日期："+time.toLocaleDateString()+" 星期"+dayN;
 		}, 1000);
 	
 
