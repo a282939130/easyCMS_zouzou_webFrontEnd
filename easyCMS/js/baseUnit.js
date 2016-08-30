@@ -24,7 +24,7 @@ var emailRegExp=/^[a-zA-Z0-9][\w-]{1,15}@[a-zA-Z0-9][\w-]{1,21}\.(com|net|cn|org
  		}
  	}
  }
- // password validate
+ // password validate1111
  var passwordRegExp=/\w{3,18}/;
  var passV=function(obj1,obj2,box){
 
